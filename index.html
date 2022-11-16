@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="EN-US">
+    <head>
+        <meta charset="utf-8"/>
+        <title>Week 3 Assignment</title>
+        <link rel="icon" href="cat_picture.png" type="image/gif"/>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+            }
+            html, body{
+                margin: 0px;
+                width: 100%;
+                height: 100%;
+            }
+            body {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .main-div{
+                max-width: 349px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            #main-title {
+                width: 274px;
+                height: 110px;
+            }
+            #main-title h1 {
+                font-family: 'Times New Roman';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 48px;
+                line-height: 55px;
+                text-align: center;
+                color: #000000;
+            }
+            #main-image {
+                margin-top: 49px;
+                width: 349px;
+                height: 269px;
+            }
+            #main-input {
+                margin-top: 49px;
+                width: 100%;
+            }
+            .main-input-text {
+                margin-top: 18px;
+                display: flex;
+                justify-content: space-between;
+            }
+            #main-input div p {
+                font-family: 'Times New Roman';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 23px;
+                height: 31px;
+                color: #000000;
+                text-align: center;
+                padding-top: 4px;
+                height: 19px;
+            }
+            .text-email {
+                width: 64px;
+            }
+            .text-name {
+                width: 102px;
+            }
+            
+            .text input{
+                width: 234.51px;
+                height: 31px;
+                background-color: #D9D9D9;
+                border: 0px;
+                font-family: 'Times New Roman';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 23px;
+                padding-left: 4px;
+            }
+            #main-input-submit{
+                margin-top: 49px;
+                display: flex;
+                width:100%;
+                justify-content: center;
+            }
+            #main-input-submit input{
+                background-color: #2E66A7;
+                color: white;
+                width: 137px;
+                height: 34px;
+                font-family: 'Times New Roman';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 23px;
+                border: 0px;
+            }
+        </style>
+    
+    </head>
+    <body>
+        <section class="section-main">
+            <div id="main-title" class="main-div">
+                <h1>Subscribe to our newsletter</h1>
+            </div>
+            <div id="main-image" class="main-div">
+                <img src="cat_picture.png"/>
+            </div>
+            <form>
+                <div id="main-input" class="main-div">
+                    <div class="main-input-text">
+                        <p class="text-email">Email</p>
+                        <div class="text"><input type="email" id="email"/></div>
+                    </div>
+                    <div class="main-input-text">
+                        <p class="text-name">Full Name</p>
+                        <div class="text"><input type="text" id="name"/></div>
+                    </div>
+                    
+                </div>
+                <div id="main-input-submit" class="main-div">
+                    <input type="submit" value="Subscribe" onclick="alert('Welcome '+document.getElementById('name').value+'! \nWe will send emails to '+document.getElementById('email').value+' from our newsletter! \nThank you for subscribing to our newsletter!')"/>
+                </div>
+            </form>
+        </section>
+    </body>
+</html>
